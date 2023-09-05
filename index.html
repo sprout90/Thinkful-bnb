@@ -37,60 +37,65 @@
         <form>
           <fieldset>
             <div class="group-form">
-              <div class="item">
-                <label for="location">Location</label>
+              <div class="group-field">
+                <div class="item">
+                  <label for="location">Location</label>
+                </div>
+                <div class="item">
+                  <input id="location" 
+                    name="location"
+                    type="text"
+                    placeholder="Search destination"
+                    >
+                </div>
               </div>
-              <div class="item">
-                <input id="location" 
-                  name="location"
-                  type="text"
-                  placeholder="Search destination"
-                  >
+              <div class="group-field">
+                <div class="item">
+                  <label for="arrive">Arrive</label>
+                </div>
+                <div class="item">
+                  <input id="arrive" 
+                    name="arrive"
+                    type="date"
+                    pattern="\d{1,2}\/\d{1,2}\/\d{4}"
+                    >
+                </div>
               </div>
-            </div>
-            <div class="group-form">
-              <div class="item">
-                <label for="arrive">Arrive</label>
+              <div class="group-field">
+                <div class="item">
+                  <label for="depart">Depart</label>
+                </div>
+                <div class="item">
+                  <input id="depart" 
+                    name="depart"
+                    type="date"
+                    pattern="\d{1,2}\/\d{1,2}\/\d{4}"
+                    >
+                </div>
               </div>
-              <div class="item">
-                <input id="arrive" 
-                  name="arrive"
-                  type="date"
-                  pattern="\d{1,2}\/\d{1,2}\/\d{4}"
-                  >
+              <div class="group-field">
+                <div class="item">
+                  <label for="rentalType">Type</label>
+                </div>
+                <div class="item">
+                  <select id="rentalType" 
+                    name="rentalType"
+                    >
+                    <option id="Apartment" name="Apartment">Apartment</option>
+                    <option id="Barn" name="Barn">Barn</option>
+                    <option id="Castle" name="Castle">Castle</option>
+                    <option id="Houseboat" name="Houseboat">Houseboat</option>
+                    <option id="Tiny House" name="Tiny House">Tiny House/option>
+                    <option id="Yacht" name="Yacht">Yacht</option>
+                    <option id="Yurt" name="Yurt">Yurt</option>
+                  </select>
+                </div>
               </div>
-            </div>
-            <div class="group-form">
-              <div class="item">
-                <label for="depart">Depart</label>
+              <div class="group-field">
+                <div class="item-double">
+                  <input id="formSubmit" name="formSubmit" type="submit" value="Search"/>
+                </div>
               </div>
-              <div class="item">
-                <input id="depart" 
-                  name="depart"
-                  type="date"
-                  pattern="\d{1,2}\/\d{1,2}\/\d{4}"
-                  >
-              </div>
-            </div>
-            <div class="group-form">
-              <div class="item">
-                <label for="rentalType">Type</label>
-              </div>
-              <div class="item">
-                <select id="rentalType" 
-                  name="rentalType"
-                  >
-                  <option id="Apartment" name="Apartment">Apartment</option>
-                  <option id="Barn" name="Barn">Barn</option>
-                  <option id="Castle" name="Castle">Castle</option>
-                  <option id="Houseboat" name="Houseboat">Houseboat</option>
-                  <option id="Tiny House" name="Tiny House">Tiny House/option>
-                  <option id="Yacht" name="Yacht">Yacht</option>
-                  <option id="Yurt" name="Yurt">Yurt</option>
-                </select>
-              </div>
-            </div>
-            <input id="formSubmit" name="formSubmit" type="submit" value="Search"/>
           </div>
           </fieldset>
         </form>

@@ -31,13 +31,6 @@ section.alternate-background {
   color: #fff;
 }
 
-fieldset {
-  border: 0px solid #000;
-  padding-bottom: 0px;
-}
-
-
-
 /* ---  Groups & Items --- */
 
 .group {
@@ -45,15 +38,22 @@ fieldset {
   flex-direction: column;
 }
 
-.group img {
+.group-form {
+  display: flex;
+  flex-direction: column;
+}
 
+.group img {
   align-self: center;
   width: 100%;
 }
 
-.group-form {
+.group-field {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  align-items: right;
+
 }
 
 .item {
@@ -63,8 +63,7 @@ fieldset {
 
 .item-double {
   flex: 2;
-  margin: 5px;
-  width: 100px;
+  margin: 10px;
 }
 
 /* -------  Navigation ------- */
@@ -156,42 +155,28 @@ footer p {
     }
 
     header {
-        /* Changes the default setting from `block` to `flex`. */
         display: flex;
-        /* Pushes the items (the title and nav) to the far sides of the 
-           browser with space between them. */
         justify-content: space-between;
-        /* Adds 0 pixels padding top and bottom, and 30 pixels padding 
-           left and right. */
         padding: 0 30px;
     }
 
     header h1 {
-        /* Sets 14 pixels of margin above and below the `h1` and sets 
-            0 pixels of margin to the left and right. */
         margin: 14px 0;
-        /* Removes or sets 0 pixels of padding above the `h1`. */
         padding-top: 0;
       }
     
 
     header nav {
-        /*
-          Pushes the navigation container down by 8 pixels to make it
-          present a little better visually within the space.
-        */
         margin-top: 8px;
       }
 
-          /* Users cannot hover on mobile devices, so that is why you
-       implement this behavior only for larger screens. */
     header nav ul li a:hover {
-        /* Targets the change when a user holds the pointer over the anchor tag 
-           (link) within the list items within the unordered list that 
-           is within the navigation that is within the header. */
         color: #bdbdbd;
     }
 
+    /* ---  Groups & Items --- */
+
+  
     .group {
       display: flex;
       flex-direction: row;
@@ -199,17 +184,47 @@ footer p {
 
     .group-form {
       display: flex;
-      flex-direction: column;
+      justify-content: space-around;
+      flex-direction: row;
+      align-items: flex-start;
+      border-color: #fff;
     }
+
+
+    .group-field {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: left;
+    }
+
+    .item {
+        flex: 1;
+        margin: 2px 10px;
+    }
+      
+    .item-double {
+      flex: 2;
+      margin: 10px;
+      align-items: center;
+    }
+
 
   /* -------  Search Form ------- */
-    form input[type=submit] {
+
+  form {
+    border: 2px solid #ff385c;
+    padding: 10px;
+  }
+
+  form input[type=submit] {
       background-color: #ff385c;
-      border: none;
       color: #fff;
       font-size: 24px;
-      padding: 15px;
+      padding: 5px;
       width: 180px;
-    }
-
+      height: 50px;
+  }
 }
+
+
