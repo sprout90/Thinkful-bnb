@@ -207,6 +207,7 @@ footer p {
       flex-direction: row;
       align-items: flex-start;
       border-color: #fff;
+      flex-wrap: wrap;
     }
 
 
