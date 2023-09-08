@@ -77,6 +77,9 @@ section.alternate-background {
   align-self: flex-start;
 }
 
+.item-width {
+  flex: 1;
+}
 
 /* -------  Navigation ------- */
 
@@ -234,6 +237,11 @@ footer p {
       align-items: center;
       align-self: center;
     }
+
+    .item-width {
+      flex: 2;
+    }
+
   
 
   /* -------  Search Form ------- */
