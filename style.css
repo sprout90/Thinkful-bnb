@@ -226,6 +226,7 @@ footer p {
     .item {
         flex: 1;
         margin: 2px 0px;
+        padding: 5px;
     }
       
     .item-double {
