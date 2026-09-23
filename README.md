@@ -26,5 +26,3 @@ Thinkful provided the design mockups, images, starter HTML and CSS, and project 
 My work focused on completing the HTML structure and CSS necessary to reproduce the supplied designs. This included implementing the responsive navigation, search form, content layouts, image behavior, Flexbox rules, and desktop media-query transformations.
 
 The original assignment instructions are retained separately in `README.instruct.md`.
-## Where Can I See It?
-To view the page, please click this [THINKFUL BNB](https://sprout90.github.io/Thinkful-bnb/) link.
